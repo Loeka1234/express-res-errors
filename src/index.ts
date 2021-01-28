@@ -1,2 +1,2 @@
 export { CustomError } from "./CustomError";
-export { errorHandlerMiddleware } from "./ErrorHandlerMiddleware";
+export { errorHandlerMiddleware } from "./errorHandlerMiddleware";

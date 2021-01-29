@@ -5,6 +5,7 @@ export abstract class DefaultError extends Error {
 
   constructor(public statusCode: number) {
     super(STATUS_CODES[statusCode]);
+    this.name = STATUS_CODES[statusCode] || this.name;
     Object.setPrototypeOf(this, Error.prototype);
   }
 

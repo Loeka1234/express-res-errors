@@ -26,7 +26,7 @@ export interface ErrorHandlerMiddlewareConfig {
 export const errorHandlerMiddleware = (
   config?: ErrorHandlerMiddlewareConfig
 ) => {
-  if (!config) config = defaultConfig;
+  config = { ...defaultConfig, ...config };
 
   const { defaultResponse, logCustomErrors, logUnknownErrors } = config;
 

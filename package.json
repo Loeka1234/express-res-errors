@@ -1,6 +1,6 @@
 {
   "name": "express-res-errors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Package for throwing errors inside of express routes",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

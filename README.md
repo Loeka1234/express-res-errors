@@ -92,7 +92,7 @@ class MyCustomError extends CustomError {
 }
 ```
 
-`serializeErrors` returns by default this typescript type: `{ message: string; field?: string }[];` The purpose of serializeErrors is that it converts variables, passed in by the constructor to this typescript type so that the JSON body with every error looks the same. Useful use case can be found [here](custom-errors-usecase.md).
+`serializeErrors` returns by default this typescript type: `{ message: string; field?: string }[];` The purpose of serializeErrors is that it converts variables, passed in by the constructor to this typescript type so that the JSON body with every error looks the same. Useful use case can be found [here](https://github.com/Loeka1234/express-res-errors/blob/main/custom-errors-usecase.md).
 
 You can change the return type of `serializeErrors`. In this example, `serializeErrors` should return an object with key `message` that has a value that is a string.
 

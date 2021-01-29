@@ -8,12 +8,14 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "ts-node-dev"
   },
   "keywords": [],
   "author": "Loeka1234",
   "license": "ISC",
   "devDependencies": {
+    "ts-node-dev": "^1.1.1",
     "typescript": "^4.1.3"
   },
   "dependencies": {

@@ -1,3 +1,5 @@
+import { DefaultErrors } from "./types";
+
 /**
  * Base class for defining custom errors.
  *
@@ -21,9 +23,7 @@
  * }
  * ```
  */
-export abstract class CustomError<
-  T = { message: string; field?: string }[]
-> extends Error {
+export abstract class CustomError<T = DefaultErrors> extends Error {
   public abstract statusCode: number;
 
   constructor(message: string) {
